@@ -1,0 +1,63 @@
+body {
+    background-color: #fff;
+    color: #000;
+    font-family: sans-serif;
+  }
+
+h1 {
+    font-size: 24px;
+}
+
+#knapp1 {
+    width: 100px;
+}
+
+#bilde1 {
+    width: 600px;
+    border: 5px solid #ddd;
+}
+
+#bg-color {
+    width: 100px;
+}
+
+#div1 {
+    margin-top: 15px;
+}
+
+button, #bg-color {
+    height: 42px;
+    padding: 0 10px;
+    vertical-align: top;
+
+}
+
+input {
+    padding: 11px 12px;
+}
+
+table {
+    margin-top: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: 5px 5px 20px #eee;
+    padding: 10px;
+}
+
+tr {
+    padding: 8px;
+    background-color: #f2f2f2;
+}
+tr:nth-child(even) {
+    background-color: white;
+}
+
+th {
+    padding: 8px;
+    text-align: left;
+}
+
+.td {
+    padding: 8px;
+    color: #444;
+}
