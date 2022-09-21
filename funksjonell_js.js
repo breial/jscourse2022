@@ -75,10 +75,29 @@
 
 
 // Nå lager vi en artig liten funksjon
-let tellNed = (num) => {
-    if(num == 0) return;
-    console.log(num);
-    tellNed(num -1);
+// let tellNed = (num) => {
+//     if(num == 0) return;
+//     console.log(num);
+//     tellNed(num -1);
+// }
+
+// tellNed(10);
+
+//Neste store oppgave, objektorientert programmering (OOP)
+
+let t = {};
+let tt = new Object();
+//To måter å lage objekt på
+
+t.navn = "Terje Berg-Hansen";
+t.adresse = {};
+t.adresse.gate = "Gatenavn";
+t.adresse.postnr = 1234;
+t.adresse.poststed = "By";
+t.telefon = ['999 00 999','22002200'];
+t.signatur = function() {
+    return this.navn+"\n"+this.adresse.gate
 }
 
-tellNed(10);
+console.log(t.signatur());
+//På denne måten kan vi legge til ting i et objekt
