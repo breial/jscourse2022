@@ -91,12 +91,12 @@ let tt = new Object();
 
 t.navn = "Terje Berg-Hansen";
 t.adresse = {};
-t.adresse.gate = "Gatenavn";
+t.adresse.gate = "Fiskefjesgata";
 t.adresse.postnr = 1234;
-t.adresse.poststed = "By";
-t.telefon = ['999 00 999','22002200'];
+t.adresse.poststed = "Fisketown";
+t.telefon = [{hjem:'90 90 90 90'},{jobb:'00 00 00 00'}];
 t.signatur = function() {
-    return this.navn+"\n"+this.adresse.gate
+    return this.navn+"\n"+this.adresse.gate+"\nTelefon: "+this.telefon
 }
 
 console.log(t.signatur());
