@@ -51,22 +51,34 @@
 
 // Nå skal vi kose oss med bankapplikasjon
 
-let konto = [
+// let konto = [
 
-    { "nummer": 1001, "transaksjon": 600 },
-    { "nummer": 1002, "transaksjon": 300 },
-    { "nummer": 1002, "transaksjon": 700 },
-    { "nummer": 1001, "transaksjon": -200 },
-    { "nummer": 1001, "transaksjon": -600 },
-    { "nummer": 1001, "transaksjon": 6000 },
-]
+//     { "nummer": 1001, "transaksjon": 600 },
+//     { "nummer": 1002, "transaksjon": 300 },
+//     { "nummer": 1002, "transaksjon": 700 },
+//     { "nummer": 1001, "transaksjon": -200 },
+//     { "nummer": 1001, "transaksjon": -600 },
+//     { "nummer": 1001, "transaksjon": 6000 },
+// ]
 
-let saldo_1001 = konto.filter( a => a.nummer == 1001).map( a => a.transaksjon).reduce((a,b) => a+b);
+// let saldo_1001 = konto.filter( a => a.nummer == 1001).map( a => a.transaksjon).reduce((a,b) => a+b);
 
-console.log(saldo_1001);
+// console.log(saldo_1001);
 
-//Hint: ikke begynn en variabel med tall
-let t1002_01 = konto.find( a => a.nummer == 1002).transaksjon;
+// //Hint: ikke begynn en variabel med tall
+// let t1002_01 = konto.find( a => a.nummer == 1002).transaksjon;
 
-console.log(t1002_01);
+// console.log(t1002_01);
 // Denne viser den første transaksjonen til konto 1002
+// Kan ikke kjede find,dog. Det ekke en higher order function.
+// Men syntaksen er lik. 
+
+
+// Nå lager vi en artig liten funksjon
+let tellNed = (num) => {
+    if(num == 0) return;
+    console.log(num);
+    tellNed(num -1);
+}
+
+tellNed(10);
