@@ -1,11 +1,10 @@
 var express = require('express');
 var router = express.Router();
 
-/* GET home page. */
+/* GET newuser page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { 
-    title: 'Min BootstrApp',
-    subtitle: 'Vi bruker bootstrap og express med ejs!'
+  res.render('newuser', { 
+    title: 'Ny bruker',
    });
 });
 

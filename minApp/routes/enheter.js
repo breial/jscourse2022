@@ -3,9 +3,8 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { 
-    title: 'Min BootstrApp',
-    subtitle: 'Vi bruker bootstrap og express med ejs!'
+  res.render('enheter', { 
+    title: 'Søk i enhetsregisteret',
    });
 });
 

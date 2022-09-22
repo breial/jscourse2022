@@ -6,15 +6,28 @@
   </head>
   <body>
     <%- include('navbar') %>
+    <main>
+      <h1><%= title %></h1>
+      <p>Velkominn til <%= title %></p>
+      <p><%= subtitle %></p>
+      <p class="fs-5">For å legg til en underside:</p>
+        <ul class="lh-lg">
+          <li>
+            endre <mark>app.js</mark>, ish-linje-10 og ish-linje 20
+          </li>
+          <li>
+            legg til <mark>dinfil.js</mark> i <mark>/routes</mark>
+          </li>
+          <li>
+            legg til innhold fra annen <mark>routes</mark> fil i din nye routes <mark>.js-fil</mark>
+          </li>
+          <li>
+            legg til <mark>dinfil.ejs</mark> i <mark>/views</mark>
+          </li>
+        </ul> 
+      
 
-  <main>
-    <h1><%= title %></h1>
-    <p>Velkominn til <%= title %></p>
-    <p><%= subtitle %></p>
-    <p>Vi skal bruke bootstrap!</p>
-  </main>
-  <footer>
-    <%- include('footer') %>
-  </footer>
+    </main>
+      <%- include('footer') %>
   </body>
 </html>
