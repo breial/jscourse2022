@@ -1,24 +1,24 @@
-// const tekst1 = "Dette er tekst 1";
-// let tekst2 = "Dette er tekst 2, kortversjonen er at let is the new var, den har bedre scope, blocklevelscope";
-// var tekst3 = "Dette er tekst 3";
+const tekst1 = "Dette er tekst 1";
+let tekst2 = "Dette er tekst 2, kortversjonen er at let is the new var, den har bedre scope, blocklevelscope";
+var tekst3 = "Dette er tekst 3";
 
-// tekst2 = "Nå er innholdet i tekst2 endret";
+tekst2 = "Nå er innholdet i tekst2 endret";
 
-// console.log(tekst1+tekst2+"\n"+tekst3);
+console.log(tekst1+tekst2+"\n"+tekst3);
 
-// console.log('\xA9');
+console.log('\xA9');
 
-// let x = 123e5;
+let x = 123e5;
 
-// console.log(x);
+console.log(x);
 
-// let a = 1;
-// let b = a++;
-// console.log(a);
-// console.log(b);
+let a = 1;
+let b = a++;
+console.log(a);
+console.log(b);
 
-// console.log(a+=5);
-// console.log(a--);
+console.log(a+=5);
+console.log(a--);
 
 
 //VI skal se mer på dato etter hvert
@@ -163,14 +163,14 @@ let num = new Number(7.1234567);
 //     console.log(dag);
 // }
 
-let kalender = {
-    "Søndag" : "Fri",
-    "Mandag" : "Kursdag",
-    "Tirsdag" : "Andre kursdag",
-}
-for (let dag of kalender) {
-    console.log(dag);
-}
+// let kalender = {
+//     "Søndag" : "Fri",
+//     "Mandag" : "Kursdag",
+//     "Tirsdag" : "Andre kursdag",
+// }
+// for (let dag of kalender) {
+//     console.log(dag);
+// }
 
 // MANGLET Å PRINTE UT DENNE FORDI DET GIKK FOR FORT
 
